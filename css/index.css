@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* @import url(http://fonts.googleapis.com/css?family=Righteous); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* font-family: 'Merriweather', serif; */
+
+html { overflow:hidden }
+body { font:12px/1.6 'Merriweather'; color:#555; background-color:#F9F3E7;}
+
+#menu { position:fixed; top:50%; transform:translateY(-50%); left:50px; z-index:99 }
+#menu li {  margin:17px 0  }
+#menu li a { display:block; height:13px;  width:13px;
+    border-radius:40%; background-color:#555;
+    position:relative ;
+}
+#menu li.on a {
+    background-color:#7B2F5A; transform:scale(1.4) }
+#menu li a span {
+    position:absolute; top:3px; left:25px; 
+    width:100px; display:none; }    
+#menu li.on a span { display:block }
+
+.poin{position:relative;}
+.poin .up{position:fixed; top:3%; right:50%; transform: translateY(-3%); 
+}
+.poin .up button{border:none;}
+.poin .down{position:fixed; bottom:3%; right:50%; transform: translateY(3%);
+}
+.poin .down button{border:none;}
+
+section { 
+    width:100vw; 
+    height:100vh; 
+    position:relative;
+    overflow:hidden; 
+}
+
+/* .sect1{}
+.sect2{}
+.sect3{}
+.sect4{} */
+
+
+
+.slide {
+    position:relative;
+    height:100vh; 
+   /*  background-size:cover;
+    background-repeat:no-repeat;
+    background-position:right center; */}
+
+
+.slide .text { position:absolute;  top:20%;
+    transform:translateY(-20%); right:90px; 
+    font-size:80px; }
+.slide .line{
+    position:absolute; top: 32%; transform:translateY(-32%);
+    right:90px; width:800px;
+    border-bottom:4px solid#555;}
+
+
+
+/* 두번째 박스(스킬 그래프) */
+.skillContainer { height:100%; text-align:center; padding:7% 10% 10% 25%; }
+.skillContainer > div {
+    height:80px; 
+    width:100%; margin:45px 0px; 
+    border:none;
+    border-radius: 10%;
+    box-shadow: 4px 4px 10px;
+    /* display:inline-block;  */
+    position:relative;
+
+    
+}
+.skillContainer > div > p {
+    position:absolute; top:50%; right:100%;
+    font-size:20px; /* width:100%;  */
+    text-align:center; 
+    transform:translate(-20px, -50%);
+}
+.skillContainer > div > .score{
+    position:absolute; left:0; top:0;
+    height:100%; transition:all 0.5s;
+    border-radius:10% 0 0 10%;
+}
+.skillContainer > div.html > .score{background-image:linear-gradient(to right, #000, #72345B); width:0%; transition-delay: 0s}
+.skillContainer > div.css > .score{background-image:linear-gradient(to right, #000, #DFDFA3); width:0%; transition-delay: 0s}
+.skillContainer > div.script > .score{background-image:linear-gradient(to right, #000, #3A5485); width:0%; transition-delay: 0s}
+.skillContainer > div.jquery > .score{background-image:linear-gradient(to right, #000, #4F8A54); width:0%; transition-delay: 0s}
+.skillContainer > div.react > .score{background-image:linear-gradient(to right, #000, #A13030); width:0%; transition-delay: 0s}
+.skillContainer> div.html.on > .score {width:70%; transition-delay: 0s; }
+.skillContainer> div.css.on > .score { width:60%;  transition-delay: 0.5s;}
+.skillContainer> div.script.on > .score { width:80%; transition-delay: 1s;}
+.skillContainer> div.jquery.on > .score { width:60%; transition-delay: 1.5s; }
+.skillContainer> div.react.on > .score { width:50%;  transition-delay: 2s;}
+
+.skillContainer .myscore {
+    position:absolute; top:50%px; right:10px;
+    text-align:center; 
+    font-size:20px; color:rgba(0,0,0,0);
+    transform:translateY(-50%);
+}
+
+/* 세번째 박스 */
+#sect3 { padding:50px 100px }
+/* #sect3 .category { font-size:20px; color:#000; margin-bottom:20px }
+#sect3 .category a { background-color:#f00; padding:7px 20px; display:inline-block;  border-radius:5px; margin-right:10px } */
+#sect3 ul { overflow:hidden;  margin:30px 30px; vertical-align:middle;}
+#sect3 ul li { 
+    float:left; width:31%; height:700px;
+    margin: 0;  
+    margin-right:2%; 
+    transform:scale(0.5);
+    opacity:0;
+    transition:all 0.5s;
+    transition-delay:0s; text-align: center; 
+}
+#sect3.on ul li {
+    transform:scale(1);
+    opacity:1;
+}
+#sect3.on ul li:nth-child(1) { transition-delay:0s }
+#sect3.on ul li:nth-child(2) { transition-delay:0.2s }
+#sect3.on ul li:nth-child(3) { transition-delay:0.4s }
+
+
+
+/* 네번째 구역 */
+#sect4 { padding:165px 600px 200px 600px;}
+#sect4 .formbox {
+    border-top: 10px solid #7B2F5A;
+    border-bottom: 10px solid #7B2F5A;
+    border-radius: 10%;padding: 50px;
+}
+
+#sect4 col:nth-child(1) { width:25%; }
+#sect4 col:nth-child(2) { width:75% }
+#sect4 td { padding:10px 5px; font-size:16px; color:#444 }
+#sect4 td label{padding:5px 0px 10px 20px}
+#sect4 input[type=text] { width:120px; height:20px; border-bottom:1px solid #444 }
+#sect4 textarea { width:500px; height:150px; border:1px solid #444}
+#sect4 .btn { text-align:center; margin:20px; }
+#sect4 button { border:none; border-radius:20px; width:60px; height:45px; font-size:20px; color:#999; margin:0 20px; }
+#sect4 button i{color:#999}
+#sect4 button[type=submit] {border:none; box-shadow: 3px 3px 6px; }
+#sect4 button[type=reset] {border:none; box-shadow: 3px 3px 6px; }
