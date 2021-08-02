@@ -141,7 +141,7 @@ section {
 #sect4 td label{padding:5px 0px 10px 20px}
 #sect4 input[type=text] { width:120px; height:20px; border-bottom:1px solid #444 }
 #sect4 textarea { width:500px; height:150px; border:1px solid #444}
-#sect4 .btn { text-align:center; margin-top;:20px; }
+#sect4 .btn { text-align:center; margin-top:20px; }
 #sect4 button { border:none; border-radius:20px; width:60px; height:45px; font-size:18px; color:#999; margin:0 20px; }
 #sect4 button i{color:#999}
 #sect4 button[type=submit] {border:none; box-shadow: 3px 3px 6px; }
