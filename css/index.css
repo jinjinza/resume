@@ -51,7 +51,7 @@ section {
 
 .slide .text { position:absolute;  top:20%;
     transform:translateY(-20%); right:90px; 
-    font-size:80px; }
+    font-size:70px; }
 .slide .line{
     position:absolute; top: 32%; transform:translateY(-32%);
     right:90px; width:800px;
@@ -62,8 +62,8 @@ section {
 /* 두번째 박스(스킬 그래프) */
 .skillContainer { height:100%; text-align:center; padding:7% 10% 10% 25%; }
 .skillContainer > div {
-    height:80px; 
-    width:100%; margin:45px 0px; 
+    height:60px; 
+    width:100%; margin:38px 0px; 
     border:none;
     border-radius: 10%;
     box-shadow: 4px 4px 10px;
@@ -102,12 +102,12 @@ section {
 }
 
 /* 세번째 박스 */
-#sect3 { padding:50px 100px }
+#sect3 { padding:60px 50px 60px 200px }
 /* #sect3 .category { font-size:20px; color:#000; margin-bottom:20px }
 #sect3 .category a { background-color:#f00; padding:7px 20px; display:inline-block;  border-radius:5px; margin-right:10px } */
 #sect3 ul { overflow:hidden;  margin:30px 30px; vertical-align:middle;}
 #sect3 ul li { 
-    float:left; width:31%; height:700px;
+    float:left; width:30%; height:700px;
     margin: 0;  
     margin-right:2%; 
     transform:scale(0.5);
@@ -115,10 +115,12 @@ section {
     transition:all 0.5s;
     transition-delay:0s; text-align: center; 
 }
+#sect3 ul li img{width:60%;}
 #sect3.on ul li {
     transform:scale(1);
     opacity:1;
 }
+/* #sect3.on ul li img{width:80%;} */
 #sect3.on ul li:nth-child(1) { transition-delay:0s }
 #sect3.on ul li:nth-child(2) { transition-delay:0.2s }
 #sect3.on ul li:nth-child(3) { transition-delay:0.4s }
@@ -126,7 +128,7 @@ section {
 
 
 /* 네번째 구역 */
-#sect4 { padding:165px 600px 200px 600px;}
+#sect4 { padding:80px 400px 160px 400px;}
 #sect4 .formbox {
     border-top: 10px solid #7B2F5A;
     border-bottom: 10px solid #7B2F5A;
@@ -135,12 +137,12 @@ section {
 
 #sect4 col:nth-child(1) { width:25%; }
 #sect4 col:nth-child(2) { width:75% }
-#sect4 td { padding:10px 5px; font-size:16px; color:#444 }
+#sect4 td { padding:10px 5px; font-size:14px; color:#444 }
 #sect4 td label{padding:5px 0px 10px 20px}
 #sect4 input[type=text] { width:120px; height:20px; border-bottom:1px solid #444 }
 #sect4 textarea { width:500px; height:150px; border:1px solid #444}
-#sect4 .btn { text-align:center; margin:20px; }
-#sect4 button { border:none; border-radius:20px; width:60px; height:45px; font-size:20px; color:#999; margin:0 20px; }
+#sect4 .btn { text-align:center; margin-top;:20px; }
+#sect4 button { border:none; border-radius:20px; width:60px; height:45px; font-size:18px; color:#999; margin:0 20px; }
 #sect4 button i{color:#999}
 #sect4 button[type=submit] {border:none; box-shadow: 3px 3px 6px; }
 #sect4 button[type=reset] {border:none; box-shadow: 3px 3px 6px; }
